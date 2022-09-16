@@ -25,15 +25,15 @@ def confirm_ingredients():  # String methods
     ingredients = f"{ingredient_1} {ingredient_2} {ingredient_3} {ingredient_4}"
     # Aha, that's the issue! We need to use butter, not milk.
     # 2.2 In a print statement, use one of the string methods from class to replace 'milk' with 'butter'
-    print(ingredients.replace("milk", "butter"))
+    print(ingredients.replace(f"{ingredient_1}", "butter"))
     # Hmm, when we use a string method in a print statement, does it change the string in our variable?
     # 2.3 Use a string method to count the number of times that 'milk' appears in our string.
-    ingredients.count("milk")
+    print(ingredients.count("milk"))
     # 2.4 Let's print out our `ingredients` variable again just to be sure.
     print(ingredients)
     # 'milk' is still in there! To save our changes to the string, we'll need to update the variable.
     # 2.5 Update our `ingredients` variable using the replace method, the same way we printed it out in step 2.2
-    ingredients = ingredients.replace("milk", "butter")
+    ingredients = ingredients.replace(f"{ingredient_1}", "butter")
     # 2.6 Print `ingredients` to make sure the change stuck this time.
     print(ingredients)
     # 2.7 That looks better. Let's make it official: use another string method to 
